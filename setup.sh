@@ -22,8 +22,6 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 # powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
-# font
-wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
 
 # ~/.vimrc
 printf "set expandtab\nset tabstop=4\nset shiftwidth=4\nset number\nset ai\nset si\nset cindent\nset hlsearch\nset background=dark\nset nocompatible\nset nocompatible\nset bs=indent,eol,start\nset history=1000\nset ruler\nset title\nset showmatch\nset nowrap\nset wmnu\nsyntax on" > ~/.vimrc
@@ -46,5 +44,9 @@ source $ZSH/oh-my-zsh.sh
 dedent zshrc
 
 printf "$zshrc" > ~/.zshrc
+
+# font
+wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
+open MesloLGS NF Regular.ttf;
 
 echo "Script done!"
